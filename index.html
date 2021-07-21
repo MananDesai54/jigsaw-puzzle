@@ -2,12 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Jigsaw Puzzle</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h1 class="title">Jigsaw Puzzle</h1>
+    <div class="game">
+      <section class="image-parts"></section>
+      <section class="created-image"></section>
+    </div>
+    <div class="backdrop hidden">
+      <div class="notification">
+        <h1>Congratulations You won!!</h1>
+        <p>You took <span id="moves"></span> moves to win the puzzle</p>
+        <button id="replay" type="button">Play Again</button>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
